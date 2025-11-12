@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding-top: 120px;
 }
+html {
+    scroll-behavior: smooth;
+}
 .topheader {
     position: fixed;
     top: 0;
@@ -13,6 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    z-index: 100;
 }
 .Menu_Horizontal {
     list-style: none;
@@ -40,6 +44,7 @@ body {
 }
 
 .imagen_grande {
+    z-index: 1;
     margin-left: 30px;
     margin-right: 30px;
     width: auto;
@@ -63,4 +68,43 @@ body {
     left: 20%;
     transform: translate(-50%,-50%);
     width: 300px;
+}
+/* Seccion conocenos */
+.Conocenos{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    gap: 100px;
+    position: static;
+    max-width: 1400px;
+}
+.quienes-somos{
+    color: rgb(89,50,50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+    max-width: 500px;
+}
+.quienes-somos h1{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.quienes-somos p{
+    background-color: rgb(207, 165, 134);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+.imagen_granja img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
 }
