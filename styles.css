@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding-top: 120px;
+    min-width: 1200px;
 }
 html {
     scroll-behavior: smooth;
