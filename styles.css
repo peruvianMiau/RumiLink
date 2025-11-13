@@ -103,8 +103,8 @@ html {
     width: 100%;
 }
 .gral-funcion .imagenes img{
-    width: 35%;
-    max-width: 400px;
+    width: 25%;
+    max-width: 300px;
     height: auto;
     flex-shrink: 1;
     height: auto;
@@ -141,7 +141,7 @@ html {
     border-radius: 15px;
     padding: 20px;
     max-width: 500px;
-    line-height: 1.2;
+    line-height: 1.3;
     white-space: pre-line;
 }
 .imagen_granja img{
@@ -195,7 +195,6 @@ html {
     background-color: rgb(207, 165, 134);
     align-items: center;
     border-radius: 15px;
-    
 }
 .cont-que-es p{
     line-height: 1.5;
@@ -254,4 +253,65 @@ html {
     line-height: 1.5;
     margin: 10px;
     flex: 1;
+}
+/* Seccion gral-conocenos */
+.gral-conocenos{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.gral-conocenos > p {
+    color: black;
+    font-size: 1.5rem;
+    background-color: rgb(207, 165, 134);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px; 
+    text-align: center;
+}
+.Integrantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 700px;
+    width: 100%;
+}
+.integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+.integrante h3{
+    background-color: rgb(207, 165, 134);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+.integrante img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Círculo */
+    border: 4px solid saddlebrown;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espacio entre foto y nombre */
+}
+.integrante button{
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-right: 1.2cm;
+    padding-left: 1.2cm;
+    margin: 20px;
+    background-color: rgb(23, 26, 74);
+    color: rgb(255,246,243);
+    transition: background-color 0.3s;
 }
