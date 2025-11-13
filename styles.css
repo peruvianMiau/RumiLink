@@ -254,7 +254,71 @@ html {
     margin: 10px;
     flex: 1;
 }
-/* Seccion gral-conocenos */
+/* Seccion caracteristicas */
+.gral-caracteristicas {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.gral-caracteristicas h1 {
+    color: black;
+    font-size: 2rem;
+    background-color: rgb(207, 165, 134);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contenedor-caracteristicas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+    width: 100%;
+}
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    max-width: 280px; 
+    position: relative; 
+}
+
+.caracteristica img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border: 3px solid saddlebrown;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+.caracteristica h2 {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    color: white; 
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    padding: 15px 10px;
+    background-color: rgba(139, 69, 19, 0.85); 
+    border-radius: 0 0 35px 35px; 
+}
+.caracteristica img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 3px solid saddlebrown;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .gral-conocenos{
     padding: 40px 20px;
     display: flex;
@@ -277,7 +341,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 700px;
+    gap: 600px;
     width: 100%;
 }
 .integrante {
