@@ -363,10 +363,10 @@ html {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%; /* Círculo */
+    border-radius: 50%;
     border: 4px solid saddlebrown;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px; /* Espacio entre foto y nombre */
+    margin-bottom: 20px;
 }
 .integrante button{
     border-radius: 20px;
@@ -379,3 +379,64 @@ html {
     color: rgb(255,246,243);
     transition: background-color 0.3s;
 }
+/*seccion footer*/
+.seccion-footer {
+    background-color: beige;
+    color: black;
+    padding: 40px 20px;
+}
+.cont-gral-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.footer-info {
+    flex: 1;
+}
+.footer-info h2 {
+    margin-bottom: 15px;
+}
+.footer-redes {
+    flex: 1;
+}
+.footer-redes h3 {
+    margin-bottom: 15px;
+}
+.lista-redes {
+    list-style: none;
+    padding: 0;
+}
+.lista-redes li {
+    margin-bottom: 8px;
+}
+.lista-redes li a {
+    text-decoration: none;
+}
+.lista-redes li a:hover {
+    color:brown;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-politica {
+    flex: 1;
+}
+.footer-politica h3 {
+    margin-bottom: 15px;
+}
+.lista-proteccion {
+    list-style: none;
+    color: black;
+    padding: 0;
+}
+.lista-proteccion li a {
+    text-decoration: none;
+}
+.lista-proteccion li a:hover {
+    color:brown;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
