@@ -5,6 +5,7 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 .topheader {
     position: fixed;
@@ -91,8 +92,9 @@ html {
     max-width: 500px;
 }
 .quienes-somos h1{
-    text-decoration: underline;
     font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 .quienes-somos p{
     background-color: rgb(207, 165, 134);
@@ -108,4 +110,108 @@ html {
     object-fit: cover;
     border-radius: 15px;
     flex-shrink: 0;
+}
+/* Seccion Conocenos */
+.descripcion{
+    color: rgb(89,50,50);
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: static;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* Div que es */
+.que-es{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+.que-es button{
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-right: 1.2cm;
+    padding-left: 1.2cm;
+    margin: 20px;
+    background-color: rgb(23, 26, 74);
+    color: rgb(255,246,243);
+    transition: background-color 0.3s;
+}
+.que-es h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* Div contenedor-que-es */
+.cont-que-es{
+    display: flex;
+    background-color: rgb(207, 165, 134);
+    align-items: center;
+    border-radius: 15px;
+    
+}
+.cont-que-es p{
+    line-height: 1.5;
+    margin: 10px;
+    flex: 1;
+}
+.cont-que-es img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+    flex-shrink: 0;
+    
+}
+/* Div como funciona */
+.como-funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+.como-funciona button{
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-right: 1.2cm;
+    padding-left: 1.2cm;
+    margin: 20px;
+    background-color: rgb(23, 26, 74);
+    color: rgb(255,246,243);
+    transition: background-color 0.3s;
+}
+.como-funciona h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cont-funciona{
+    display: flex;
+    background-color: rgb(207, 165, 134);
+    align-items: center;
+    border-radius: 15px;
+}
+.cont-funciona img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+    flex-shrink: 0;
+}
+.como-funciona p{
+    line-height: 1.5;
+    margin: 10px;
+    flex: 1;
 }
