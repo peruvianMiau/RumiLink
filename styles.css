@@ -191,6 +191,7 @@ html {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .screenshot-item {
@@ -232,7 +233,7 @@ html {
     flex-shrink: 0;
 }
 
-/* Fallback para video/imagen única */
+/*imagen única */
 .video-placeholder {
     position: relative;
     width: 100%;
