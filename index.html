@@ -1,235 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>RumiLink</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RumiLink - Trazabilidad Ganadera Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
     <nav class="topheader">
-        <a href="" class="logo">
-        <img
-            src="Imagenes/RumiLink_.png"
-            alt=""
-            width="100"
-            height="50"
-        >
+        <a href="#" class="logo">
+            <img src="Imagenes/RumiLink_.png" alt="RumiLink Logo">
         </a>
-
-        <ul class="Menu_Horizontal">
-            <li><a href="#descripcion">¿Qué es?</a></li>
-            <li><a href="#como-funciona">¿Cómo funciona?</a></li>
-            <li><a href="#caracteristicas">Caracteristicas</a></li>
-            <li><a href="#gral-conocenos">Conocenos</a></li>
-            <li><button type="submit">Descargar</button></li>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="Menu_Horizontal" id="mainMenu">
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#conocenos">Conócenos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button class="btn-download">Descargar App</button></li>
         </ul>
     </nav>
-    <div class="imagen_grande">
-        <img src="Imagenes/imagen_grande.jpg" 
-        alt="imagen-vaca-fondo" class="vaca">
-        <img src="Imagenes/RumiLink_.png" alt="logo-tumilink" class="logo1">
-    </div>
-    <section class="descripcion" id="descripcion">
-        <div class="que-es">
-            <h1>¿Qué es?</h1>
-            <div class="cont-que-es">
-                <img src="Imagenes/cerdo.jpeg" alt="cerdo-imagen">
-                <p>Somos una plataforma web de trazabilidad y sanidad donde puedan registrar digitalmente a sus animales, con información sobre historial sanitario, vacunas, peso y certificaciones, garantizando datos confiables y transparentes. </p>
+
+    <!-- Hero Section con Pitch -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>RumiLink</h1>
+            <p class="pitch-message">
+                Transforma la gestión de tu ganado con trazabilidad digital. 
+                Conecta con compradores formales, certifica la sanidad de tus animales 
+                y abre nuevas oportunidades de mercado.
+            </p>
+            <button class="cta-primary" onclick="window.location.href='#demo'">Ver Demo</button>
+            <button class="cta-secondary" onclick="window.location.href='#contacto'">Contáctanos</button>
+        </div>
+    </section>
+
+    <!-- Video/Demo Section -->
+    <section class="demo-section" id="demo">
+        <h2>Conoce RumiLink en Acción</h2>
+        <p class="subtitle">
+            Descubre cómo nuestra plataforma revoluciona la gestión ganadera con tecnología al alcance de tu mano
+        </p>
+        <div class="screenshots-gallery">
+            <div class="screenshot-item">
+                <img src="Imagenes/funcion9.png" alt="Registro de ganado en RumiLink">
+                <p class="screenshot-caption">Registro rápido y fácil de tu ganado</p>
             </div>
-            <button type="submit">Leer mas...</button>
+            <div class="screenshot-item">
+                <img src="Imagenes/funcion3.png" alt="Control sanitario digital">
+                <p class="screenshot-caption">Control sanitario completo</p>
+            </div>
+            <div class="screenshot-item">
+                <img src="Imagenes/funcion5.png" alt="Certificados digitales">
+                <p class="screenshot-caption">Genera certificados verificables</p>
+            </div>
+        </div>
+        <p style="color: #666; max-width: 800px; margin: 0 auto;">
+            Mira cómo los ganaderos están mejorando su producción, certificando sus animales 
+            y accediendo a nuevos mercados con nuestra solución digital
+        </p>
+    </section>
+
+    <!-- ¿Qué es? / ¿Cómo funciona? -->
+    <section class="descripcion" id="que-es">
+        <div class="que-es">
+            <h1>¿Qué es RumiLink?</h1>
+            <div class="cont-que-es">
+                <img src="Imagenes/cerdo.jpeg" alt="Plataforma Digital">
+                <p>
+                    Somos una plataforma web de trazabilidad y sanidad donde puedes registrar 
+                    digitalmente a tus animales, con información sobre historial sanitario, 
+                    vacunas, peso y certificaciones, garantizando datos confiables y transparentes.
+                </p>
+            </div>
+            <button class="btn-leer-mas">Leer más...</button>
         </div>
         <div class="como-funciona">
             <h1>¿Cómo funciona?</h1>
             <div class="cont-funciona">
-                <img src="Imagenes/vaca.jpg" alt="imagen-foto">
-                <p>Usted puede registrar digitalmente a sus animales en donde otras personas interesadas o usted mismo pueda revisar todo lo que registre y anote para, usted, revisar información que necesite o alguien que este interesado en su producto visualice dicha información.</p>
+                <img src="Imagenes/vaca.jpg" alt="Sistema de Registro">
+                <p>
+                    Registra digitalmente a tus animales donde otras personas interesadas 
+                    o tú mismo puedan revisar toda la información. Facilita la transparencia 
+                    y confianza con compradores del sector formal.
+                </p>
             </div>
-            <button type="submit">Leer mas...</button>
+            <button class="btn-leer-mas">Leer más...</button>
         </div>
     </section>
-    
-    <section class="Conocenos">
-        <div class="quienes-somos">
-            <h1>¿Quienes somos?</h1>
-            <p>En RumiLink, buscamos conectar a los ganaderos con los compradores del sector formal para mejorar la producción y la sanidad del ganado en el Perú. Somos una startup llamada AgroNexo, formada por estudiantes comprometidos con modernizar el sector ganadero a través de la tecnología.<br>
-            <br> Creemos que la información sanitaria y la trazabilidad del ganado son claves para garantizar alimentos de calidad y abrir nuevas oportunidades de mercado. Por eso, desarrollamos una plataforma digital que permite a los productores registrar la salud, vacunas y certificaciones de sus animales, brindando confianza y transparencia a los compradores.
-            </p>
-        </div>
-        <div class="imagen_granja">
-            <img src="Imagenes/granja.jpg" alt="foro_granja">
-        </div>
-    </section>
-    <section class="gral-funcion" id="como-funciona">
-        <h1>Nuestro ritmo de trabajo</h1>
-        <p>1. Registra tu ganado fácilmente<br>
-        Desde tu cuenta de usuario, podrás registrar cada animal con su información básica:<br> raza, edad, peso y número de identificación. En minutos tendrás tu rebaño digitalizado y listo para gestionar.</p>
-        <div class="imagenes">
-            <img src="Imagenes/funcion1.png" alt="mockup-instructivo">
-            <img src="Imagenes/funcion2.png" alt="mockup-instructivo">
-        </div>
-        <p>
-            2. Lleva el control sanitario al día<br>
-            RumiLink te permite registrar vacunas, desparasitaciones, partos, alimentación y<br>cualquier evento importante. Además, recibirás recordatorios automáticos para no olvidar tu calendario sanitario.
-        </p>
-        <div class="imagenes">
-            <img src="Imagenes/funcion3.png" alt="mockup-instructivo">
-            <img src="Imagenes/funcion4.png" alt="mockup-instructivo">
-        </div>
-        <p>
-            3. Genera certificados digitales con validez<br>
-            Cada registro genera automáticamente una ficha sanitaria digital, que puedes<br>descargar o compartir con compradores formales. Los certificados están vinculados a datos verificados, lo que aumenta la confianza y la trazabilidad.
-        </p>
-        <div class="imagenes">
-            <img src="Imagenes/funcion5.png" alt="mockup-instructivo">
-            <img src="Imagenes/funcion6.png" alt="mockup-instructivo">
-        </div>
-        <p>
-            4. Conecta con compradores formales<br>
-            Los compradores del sector formal pueden buscar ganaderos verificados, filtrar animales según su estado sanitario o ubicación, y acceder a certificados digitales antes de concretar una compra. Más transparencia, más oportunidades de negocio.
-        </p>
-        <div class="imagenes">
-            <img src="Imagenes/funcion7.png" alt="mockup-instructivo">
-            <img src="Imagenes/funcion8.png" alt="mockup-instructivo">
-        </div>
-        <p>
-            5. Accede desde cualquier lugar<br>
-            Diseñamos RumiLink para que funcione incluso sin conexión a internet, permitiendo   registrar datos en campo y sincronizarlos después. Ya sea desde tu laptop o tu celular, la información de tu ganado siempre estará disponible y segura.
-        </p>
-        <div class="imagenes">
-            <img src="Imagenes/funcion9.png" alt="mockup-instructivo">
-            <img src="Imagenes/funcion10.png" alt="mockup-instructivo">
-        </div>
-    </section>
+
+    <!-- Características -->
     <section class="gral-caracteristicas" id="caracteristicas">
-        <h1>Explora todas nuestras opciones</h1>
+        <h1>Explora todas nuestras funcionalidades</h1>
         <div class="contenedor-caracteristicas">
             <div class="caracteristica">
-            <img src="Imagenes/feat1.png" alt="Trazabilidad">
-            <h2>Perfiles Ganaderos</h2>
+                <img src="Imagenes/feat1.png" alt="Perfiles Ganaderos">
+                <h2>Perfiles Ganaderos</h2>
             </div>
             <div class="caracteristica">
-            <img src="Imagenes/feat2.png" alt="Trazabilidad">
-            <h2>Catálogos</h2>
+                <img src="Imagenes/feat2.png" alt="Catálogos">
+                <h2>Catálogos Digitales</h2>
             </div>
-                        <div class="caracteristica">
-            <img src="Imagenes/feat3.png" alt="Trazabilidad">
-            <h2>Historial Sanitario</h2>
+            <div class="caracteristica">
+                <img src="Imagenes/feat3.png" alt="Historial">
+                <h2>Historial Sanitario</h2>
             </div>
         </div>
         <div class="contenedor-caracteristicas">
             <div class="caracteristica">
-            <img src="Imagenes/feat4.png" alt="Trazabilidad">
-            <h2>Ubicación Geográfica</h2>
+                <img src="Imagenes/feat4.png" alt="Ubicación">
+                <h2>Ubicación Geográfica</h2>
             </div>
             <div class="caracteristica">
-            <img src="Imagenes/feat5.png" alt="Trazabilidad">
-            <h2>Comparación de Ganados</h2>
+                <img src="Imagenes/feat5.png" alt="Comparación">
+                <h2>Comparación de Ganados</h2>
             </div>
-                        <div class="caracteristica">
-            <img src="Imagenes/feat6.png" alt="Trazabilidad">
-            <h2>Consultar Experiencia </h2>
+            <div class="caracteristica">
+                <img src="Imagenes/feat6.png" alt="Experiencia">
+                <h2>Consultar Experiencia</h2>
             </div>
         </div>
         <div class="contenedor-caracteristicas">
             <div class="caracteristica">
-            <img src="Imagenes/feat7.png" alt="Trazabilidad">
-            <h2>Búsqueda de animales por filtros</h2>
+                <img src="Imagenes/feat7.png" alt="Búsqueda">
+                <h2>Búsqueda por Filtros</h2>
             </div>
             <div class="caracteristica">
-            <img src="Imagenes/feat8.png" alt="Trazabilidad">
-            <h2>Actualizar Certificado digita</h2>
+                <img src="Imagenes/feat8.png" alt="Actualizar">
+                <h2>Actualizar Certificado</h2>
             </div>
             <div class="caracteristica">
-            <img src="Imagenes/feat9.png" alt="Trazabilidad">
-            <h2>Generar Certificado digital</h2>
+                <img src="Imagenes/feat9.png" alt="Generar">
+                <h2>Generar Certificado</h2>
             </div>
         </div>
     </section>
-    <section class="gral-conocenos" id="gral-conocenos">
+
+    <!-- Conócenos -->
+    <section class="gral-conocenos" id="conocenos">
         <p>
-            Somos AgroNexo, buscamos fortalecer la coordinación de productores y compradores del sector formal para mejorar los niveles de producción y sanidad de los ganados mayores. Nuestra misión es facilitar la coordinación de los actores de la cadena del ganado mediante nuestra solución RumiLink.
+            Somos AgroNexo, buscamos fortalecer la coordinación entre productores y compradores 
+            del sector formal para mejorar los niveles de producción y sanidad de los ganados. 
+            Nuestra misión es facilitar la coordinación de los actores de la cadena ganadera 
+            mediante nuestra solución RumiLink.
         </p>
         <div class="Integrantes">
             <div class="integrante">
-                <img src="Imagenes/integrante1.png" alt="Integrante 1">
-                <h3>Guillermo Alessandro
-                    Saavedra Rodriguez</h3>
-                <button type="submit">Ver más</button>
-                
+                <img src="Imagenes/integrante1.png" alt="Guillermo Saavedra">
+                <h3>Guillermo Alessandro Saavedra Rodriguez</h3>
+                <button>Ver perfil</button>
             </div>
             <div class="integrante">
-                <img src="Imagenes/integrante2.png" alt="Integrante 2">
-                <h3>Mariana Hortencia
-                Morocho Pinedo </h3>
-                <button type="submit">Ver más</button>
-            </div>
-        </div>
-        <div class="Integrantes">
-            <div class="integrante">
-                <img src="Imagenes/integrante3.png" alt="Integrante 1">
-                <h3>Diana Carolina
-                Li Gayoso</h3>
-                <button type="submit">Ver más</button>
-                
+                <img src="Imagenes/integrante2.png" alt="Mariana Morocho">
+                <h3>Mariana Hortencia Morocho Pinedo</h3>
+                <button>Ver perfil</button>
             </div>
             <div class="integrante">
-                <img src="Imagenes/integrante4.png" alt="Integrante 2">
-                <h3>Sebastián William
-                Ruiz Cruz</h3>
-                <button type="submit">Ver más</button>
+                <img src="Imagenes/integrante3.png" alt="Diana Li">
+                <h3>Diana Carolina Li Gayoso</h3>
+                <button>Ver perfil</button>
             </div>
         </div>
         <div class="Integrantes">
             <div class="integrante">
-                <img src="Imagenes/integrante5.png" alt="Integrante 1">
-                <h3>Salym Pool
-                Galvez Meza</h3>
-                <button type="submit">Ver más</button>
-                
+                <img src="Imagenes/integrante4.png" alt="Sebastián Ruiz">
+                <h3>Sebastián William Ruiz Cruz</h3>
+                <button>Ver perfil</button>
             </div>
             <div class="integrante">
-                <img src="Imagenes/integrante6.png" alt="Integrante 2">
-                <h3>Tamara Mia
-                Guzman Uriarte</h3>
-                <button type="submit">Ver más</button>
+                <img src="Imagenes/integrante5.png" alt="Salym Galvez">
+                <h3>Salym Pool Galvez Meza</h3>
+                <button>Ver perfil</button>
+            </div>
+            <div class="integrante">
+                <img src="Imagenes/integrante6.png" alt="Tamara Guzman">
+                <h3>Tamara Mia Guzman Uriarte</h3>
+                <button>Ver perfil</button>
             </div>
         </div>
     </section>
+
+    <!-- Contacto Section -->
+    <section class="contacto-section" id="contacto">
+        <h2>Contáctanos</h2>
+        <div class="contacto-info">
+            <div class="contacto-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:contacto@rumilink.com">contacto@rumilink.com</a></p>
+                <p><a href="mailto:soporte@rumilink.com">soporte@rumilink.com</a></p>
+            </div>
+            <div class="contacto-item">
+                <h3>📱 Teléfono</h3>
+                <p><a href="tel:+51987654321">+51 987 654 321</a></p>
+                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="contacto-item">
+                <h3>📍 Ubicación</h3>
+                <p>Universidad Peruana de Ciencias Aplicadas</p>
+                <p>Lima, Perú</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <section class="seccion-footer">
         <div class="cont-gral-footer">
-            <div class="footer-info">   
+            <div class="footer-info">
                 <h2>RumiLink</h2>
-                <p>© 2025 RumiLink. Todos los derechos reservados.</p> 
+                <p>© 2025 RumiLink - AgroNexo. Todos los derechos reservados.</p>
+                <p>Desarrollado por estudiantes de UPC para revolucionar el sector ganadero peruano</p>
             </div>
             <div class="footer-redes">
-                <h3>Redes Sociales </h3>
+                <h3>Redes Sociales</h3>
                 <ul class="lista-redes">
                     <li>
-                        <img src="Imagenes/Facebook.png" alt="Facebook_Icon" width="20" height="20">
-                        <a href="">Facebook</a></li>
+                        <img src="Imagenes/Facebook.png" alt="Facebook" width="20" height="20">
+                        <a href="https://facebook.com/rumilink" target="_blank">Facebook</a>
+                    </li>
                     <li>
-                        <img src="Imagenes/x.png" alt="Twitter_Icon" width="25" height="20">
-                        <a href="">Twitter</a></li>
+                        <img src="Imagenes/x.png" alt="Twitter" width="20" height="20">
+                        <a href="https://twitter.com/rumilink" target="_blank">Twitter</a>
+                    </li>
                     <li>
-                        <img src="Imagenes/Instagram.png" alt="Instagram_Icon" width="20" height="20">
-                        <a href="">Instagram</a></li>
+                        <img src="Imagenes/Instagram.png" alt="Instagram" width="20" height="20">
+                        <a href="https://instagram.com/rumilink" target="_blank">Instagram</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-politica">
-                <h3>Proteccion de datos</h3>
+                <h3>Protección de Datos</h3>
                 <ul class="lista-proteccion">
-                    <li>
-                        <a href="PDFs/Ley_Proteccion_Datospdf.pdf" target="_blank"
-                            >Ley Proteccion Datos</a>
-                </li>
-                    <li><a href="">Politicas</a></li>
-                    <li><a href="">Normas</a></li>
-                    <li><a href="">Reglamento</a></li>
-            </ul>
+                    <li><a href="PDFs/Ley_Proteccion_Datospdf.pdf" target="_blank">Ley Protección de Datos</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Reglamento de Uso</a></li>
+                </ul>
             </div>
         </div>
     </section>
-    </body>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mainMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Cerrar menú al hacer clic en un enlace (móvil)
+        document.querySelectorAll('.Menu_Horizontal a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('mainMenu').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
