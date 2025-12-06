@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login RumiLink</title>
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <!-- FONDO DECORATIVO -->
+
+    <div class="top-curve"></div>
+
+    <div class="bottom-curve"></div>
+
+    <!-- ICONOS DE ESTADO SUPERIOR -->
+
+    <div class="status-bar">
+      <span>14:24</span>
+    </div>
+
+    <section class="login-container">
+      <img src="LOGO/RumiLink_color.png" alt="" class="logo" />
+
+      <form class="login-box" onsubmit="return validarLogin(event);">
+        <div class="input-group">
+          <label>Correo electrónico</label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Contraseña</label>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+
+        <a href="#" class="forgot-password">¿Has olvidado tu contraseña?</a>
+
+        <button type="submit" class="login-button">Iniciar sesión</button>
+
+        <div class="divider">
+          <span class="circle"></span>
+        </div>
+
+        <div class="social-login">
+          <button class="google-btn">
+            <img src="LOGO/google.png" /> Inicia sesión con Google
+          </button>
+
+          <button class="facebook-btn">
+            <img src="LOGO/facebook.png" /> Inicia sesión con Facebook
+          </button>
+        </div>
+
+        <p class="register-text">
+          ¿Aún no tienes una cuenta?
+
+          <a href="#" class="register-link">Regístrate</a>
+        </p>
+      </form>
+    </section>
+
+    <script src="login.js"></script>
+  </body>
+</html>
